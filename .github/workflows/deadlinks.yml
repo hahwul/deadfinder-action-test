@@ -1,0 +1,17 @@
+name: Deadlinks
+on:
+  workflow_dispatch:
+  
+jobs:
+  deadfinder:
+    runs-on: ubuntu-24.04
+    steps:
+    - name: Run DeadFinder
+      uses: hahwul/deadfinder@1.7.0
+      id: broken-link
+      with:
+        command: url
+        target: https://www.hahwul.com
+    
+    - name: Output Handling
+      run: echo ${{ steps.broken-link.outputs.output }}
