@@ -11,7 +11,7 @@ jobs:
       id: broken-link
       with:
         command: url
-        target: https://www.hahwul.com
+        target: https://www.hahwul.com/cullinan/csrf/
     
     - name: Output Handling
       run: echo ${{ steps.broken-link.outputs.output }}
