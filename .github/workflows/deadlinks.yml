@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
     - name: Run DeadFinder
-      uses: hahwul/deadfinder@7c88b17adc6b755a9b186765022a9bfc66f1fb33
+      uses: hahwul/deadfinder@1.7.1
       id: broken-link
       with:
         command: url
